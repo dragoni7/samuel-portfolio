@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectFilterButton from './ProjectFilterButton';
 import { motion } from 'framer-motion';
-import transition from '../transition';
+import transition from '../util/transition';
 
 type Project = {
   imgUrl: string;

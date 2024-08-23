@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import RollDownLabel from './RollDownLabel';
 import Image from 'next/image';
-import transition from '../transition';
+import transition from '../util/transition';
 
 const Landing: React.FC = () => {
   return (

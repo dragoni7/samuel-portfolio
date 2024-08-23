@@ -5,6 +5,8 @@ import Landing from './components/Landing';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import { AnimatePresence } from 'framer-motion';
+import Contact from './components/Contact';
+import Skills from './components/Skills';
 
 export default function Home() {
   const [section, setSection] = useState<string>('Landing');
@@ -18,13 +20,13 @@ export default function Home() {
         return <About />;
       }
       case 'Skills': {
-        return null;
+        return <Skills />;
       }
       case 'Projects': {
         return <Projects />;
       }
       case 'Contact': {
-        return null;
+        return <Contact />;
       }
     }
   }

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import transition from '../transition';
+import transition from '../util/transition';
 
 const About: React.FC = () => {
   return (
