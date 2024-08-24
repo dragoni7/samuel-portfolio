@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import transition from '../util/transition';
+import transition from '../../util/transition';
+import FadeIn from '@/app/components/FadeIn';
 
 const About: React.FC = () => {
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section className="text-white" id="About">
+      <FadeIn className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/assets/images/wsu-logo.png" width={450} height={450} alt="WSU Logo" />
         <div className="bg-indigo-500 rounded-md px-7 pb-7">
           <br />
@@ -19,7 +20,7 @@ const About: React.FC = () => {
             learning new tech stacks, and keeping up with the latest technologies.
           </p>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 };

@@ -1,6 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import transition from '../util/transition';
+import transition from '../../util/transition';
+import Link from 'next/link';
+import Image from 'next/image';
+import FadeIn from '@/app/components/FadeIn';
 
 const Contact: React.FC = () => {
   const [emailSubmitted, setEmailSubmitted] = useState<boolean>(false);
@@ -15,7 +18,7 @@ const Contact: React.FC = () => {
     };
 
     const JSONdata = JSON.stringify(data);
-    const endpoint = '/api/send';
+    const endpoint = '/api/contact';
 
     const options = {
       method: 'POST',
@@ -26,7 +29,6 @@ const Contact: React.FC = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
 
     if (response.status === 200) {
       setEmailSubmitted(true);
@@ -35,13 +37,29 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
-      <div>
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md"> contact description </p>
-        <div className="socials flex flex-row gap-2"></div>
-      </div>
-      <div>
+    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4" id="Contact">
+      <FadeIn>
+        <h5 className="text-2xl font-bold text-white my-2">Let's Connect</h5>
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-xl">
+          I am currently seeking positions in software engineering or related fields, my inbox is always open. I do my
+          best to respond to any questions or conversations sent to me!
+        </p>
+        <div className="socials flex flex-row gap-2 mb-5">
+          <Link href="https://www.linkedin.com/in/samueldgibson/">
+            <Image
+              src="/assets/images/linkedin.svg"
+              width={48}
+              height={48}
+              alt="LinkedIn"
+              className="hover:scale-110"
+            />
+          </Link>
+          <Link href="https://github.com/dragoni7">
+            <Image src="/assets/images/github.svg" width={48} height={48} alt="GitHub" className="hover:scale-110" />
+          </Link>
+        </div>
+      </FadeIn>
+      <FadeIn>
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
@@ -87,7 +105,7 @@ const Contact: React.FC = () => {
           </button>
           {emailSubmitted && <p className="text-green-500 text-sm mt-2"> Email Successfully Sent!</p>}
         </form>
-      </div>
+      </FadeIn>
     </section>
   );
 };

@@ -1,12 +1,12 @@
 'use client';
 import { ReactNode, useState } from 'react';
-import About from './components/About';
-import Landing from './components/Landing';
+import About from './features/About/About';
+import Landing from './features/Landing/Landing';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+import Projects from './features/Projects/Projects';
 import { AnimatePresence } from 'framer-motion';
-import Contact from './components/Contact';
-import Skills from './components/Skills';
+import Contact from './features/Contact/Contact';
+import Skills from './features/Skills/Skills';
 
 export default function Home() {
   const [section, setSection] = useState<string>('Landing');

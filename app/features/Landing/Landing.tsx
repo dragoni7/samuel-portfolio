@@ -2,13 +2,15 @@
 import Link from 'next/link';
 import RollDownLabel from './RollDownLabel';
 import Image from 'next/image';
-import transition from '../util/transition';
+import transition from '../../util/transition';
+import { motion } from 'framer-motion';
+import FadeIn from '@/app/components/FadeIn';
 
 const Landing: React.FC = () => {
   return (
-    <section>
+    <section id="Landing">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <FadeIn className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">Hello, I'm Samuel</h1>
           <p className="text-[#ADB7BE] overflow-hidden text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4">
             I am a...&nbsp;
@@ -50,7 +52,7 @@ const Landing: React.FC = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );
