@@ -2,8 +2,8 @@ import { EmailTemplate } from '@/app/features/Contact/EmailTemplate';
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const recieverEmail = process.env.NEXT_PUBLIC_RECIEVER_EMAIL;
-const senderEmail = process.env.NEXT_PUBLIC_SENDER_EMAIl;
+const recieverEmail = process.env.RECIEVER_EMAIL;
+const senderEmail = process.env.SENDER_EMAIl;
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
   }
 
-  const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
     const { data, error } = await resend.emails.send({
