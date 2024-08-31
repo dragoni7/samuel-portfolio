@@ -18,7 +18,7 @@ const Landing: React.FC = () => {
           <RollDownLabel labels={['Software Engineer', 'Web Developer', 'Fullstack Developer', 'Game Modder']} />
           <div className="fixed bottom-40">
             <div className="flex gap-3 md:gap-4 justify-start items-center mt-10 mb-10">
-              <a href="/assets/files/SamuelGibsonResume.pdf" target="_">
+              <a href="/assets/files/GibsonSamuelResume.pdf" target="_">
                 <button className="px-4 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-300 text-black hover:scale-110 font-semibold">
                   Resume
                 </button>
