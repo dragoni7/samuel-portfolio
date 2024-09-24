@@ -62,6 +62,14 @@ const projects: Project[] = [
     previewUrl: '/',
   },
   {
+    imgUrl: '/assets/images/D2Loadouts.png',
+    title: 'D2 Loadouts',
+    description: 'Web app aiming to help players create, equip, and share optimized loadouts with ease in destiny 2.',
+    tag: ['Personal'],
+    gitUrl: 'https://github.com/dragoni7/d2loadouts',
+    previewUrl: 'https://d2loadouts.com/',
+  },
+  {
     imgUrl: '/assets/images/BanWho.png',
     title: 'BanWho?',
     description:
@@ -87,15 +95,6 @@ const projects: Project[] = [
     tag: ['Personal'],
     gitUrl: '/',
     previewUrl: '/',
-  },
-  {
-    imgUrl: '/assets/images/D2Loadouts.png',
-    title: 'D2 Loadouts',
-    description:
-      'Web app written in designed to aid players of the game Destiny determine, equip, and share optimal loadouts.',
-    tag: ['Personal'],
-    gitUrl: 'https://github.com/dragoni7/d2loadouts',
-    previewUrl: 'https://d2loadouts.com/',
   },
   {
     imgUrl: '/assets/images/Minecraft.png',
