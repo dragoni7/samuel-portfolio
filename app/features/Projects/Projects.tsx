@@ -88,13 +88,22 @@ const projects: Project[] = [
     previewUrl: '/',
   },
   {
+    imgUrl: '/assets/images/PokePrep.png',
+    title: 'Poke Prep',
+    description:
+      'Web app providing tools for optimizing pokemon battles. Includes a type calculator and pokedex! Hosted on Azure and built with React and MUI.',
+    tag: ['Personal'],
+    gitUrl: 'https://github.com/dragoni7/PokePrep',
+    previewUrl: 'https://jolly-plant-0d0816410.4.azurestaticapps.net/',
+  },
+  {
     imgUrl: '/assets/images/ArtistGallery.png',
     title: 'Artist Gallery',
     description:
-      'Volunteer web dev work for artist client. Utilizes Azure static web app hosting, Azure functions, and the Azure data api builder to provide data upload and retrieval from database and blob storage.',
+      'Freelance web dev work for artist client. Utilizes Azure static web app hosting, Azure functions, and the Azure data api builder to provide data upload and retrieval from database and blob storage.',
     tag: ['Personal'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/dragoni7/artist-gallery',
+    previewUrl: 'https://agreeable-glacier-0d18b781e.6.azurestaticapps.net',
   },
   {
     imgUrl: '/assets/images/Minecraft.png',

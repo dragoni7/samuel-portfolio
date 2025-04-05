@@ -15,7 +15,9 @@ const Landing: React.FC = () => {
           <p className="text-[#ADB7BE] overflow-hidden text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4">
             I am a...&nbsp;
           </p>
-          <RollDownLabel labels={['Software Engineer', 'Web Developer', 'Fullstack Developer', 'Game Modder']} />
+          <RollDownLabel
+            labels={['Software Engineer', 'Web Developer', 'Fullstack Developer', 'Game Modder', 'Game Developer']}
+          />
           <div className="fixed bottom-40">
             <div className="flex gap-3 md:gap-4 justify-start items-center mt-10 mb-10">
               <a href="/assets/files/GibsonSamuelResume.pdf" target="_">

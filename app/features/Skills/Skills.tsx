@@ -6,6 +6,7 @@ import { Node } from './Node';
 import { languages } from './languages';
 import FadeIn from '@/app/components/FadeIn';
 import { CloudIcon, CubeIcon, DocumentArrowUpIcon } from '@heroicons/react/16/solid';
+import SlideIn from '@/app/components/SlideIn';
 
 const Skills: React.FC = () => {
   const [totalLanguages, setTotalLanguages] = useState<{ [key: string]: number }>({});
@@ -49,7 +50,7 @@ const Skills: React.FC = () => {
         <div id="languages" className="col-span-3 text-center">
           {Object.keys(totalLanguages).length !== 0 ? (
             <>
-              <h2 className="text-4xl font-bold text-white">My Programming Languages</h2>
+              <h2 className="text-4xl font-bold text-white">Programming Languages</h2>
               <h2 className="text-2xl font-bold text-[#ADB7BE] py-2">Larger = more used</h2>
               <PackingGraph
                 width={getWidth('languages')}
@@ -85,8 +86,8 @@ const Skills: React.FC = () => {
           )}
         </div>
         <div id="technologies" className="md:grid grid-cols-3 col-span-3 text-center gap-20">
-          <h2 className="text-4xl font-bold text-white col-span-3">My Technologies</h2>
-          <FadeIn className="bg-indigo-500 rounded-3xl">
+          <h2 className="text-4xl font-bold text-white col-span-3">Technologies</h2>
+          <SlideIn className="bg-indigo-500 rounded-3xl" delay={1}>
             <CloudIcon />
             <h2 className="text-4xl font-bold text-white">Cloud</h2>
             <h2 className="text-2xl text-white">
@@ -96,8 +97,8 @@ const Skills: React.FC = () => {
                 <li className="me-4">Vercel</li>
               </ul>
             </h2>
-          </FadeIn>
-          <FadeIn className="bg-indigo-500 rounded-3xl">
+          </SlideIn>
+          <SlideIn className="bg-indigo-500 rounded-3xl" delay={1.2}>
             <CubeIcon />
             <h2 className="text-4xl font-bold text-white">Frameworks</h2>
             <h2 className="text-2xl text-white">
@@ -113,10 +114,11 @@ const Skills: React.FC = () => {
                 <li className="me-4">Maven</li>
                 <li className="me-4">JUnit</li>
                 <li className="me-4">Mockito</li>
+                <li className="me-4">Spring Boot</li>
               </ul>
             </h2>
-          </FadeIn>
-          <FadeIn className="bg-indigo-500 rounded-3xl">
+          </SlideIn>
+          <SlideIn className="bg-indigo-500 rounded-3xl" delay={1.4}>
             <DocumentArrowUpIcon />
             <h2 className="text-4xl font-bold text-white">Source Control</h2>
             <h2 className="text-2xl text-white">
@@ -126,7 +128,7 @@ const Skills: React.FC = () => {
                 <li className="me-4">GitHub</li>
               </ul>
             </h2>
-          </FadeIn>
+          </SlideIn>
         </div>
       </FadeIn>
     </section>

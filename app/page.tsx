@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <AnimatePresence mode="wait">
-      <main className="flex min-h-screen flex-col bg-[#070a1a]">
+      <main className="flex min-h-screen flex-col bg-gradient-to-br from-[#070a1a] via-[#0e174c] to-[#0b165f]">
         <Navbar onNavigate={(newSection: string) => setSection(newSection)} />
         <div className="container mt-32 mx-auto px-12 py-4">{renderSection()}</div>
       </main>
