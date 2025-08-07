@@ -103,7 +103,7 @@ const projects: Project[] = [
       'Freelance web dev work for artist client. Utilizes Azure static web app hosting, Azure functions, and the Azure data api builder to provide data upload and retrieval from database and blob storage.',
     tag: ['Personal'],
     gitUrl: 'https://github.com/dragoni7/artist-gallery',
-    previewUrl: 'https://agreeable-glacier-0d18b781e.6.azurestaticapps.net',
+    previewUrl: '',
   },
   {
     imgUrl: '/assets/images/Minecraft.png',
